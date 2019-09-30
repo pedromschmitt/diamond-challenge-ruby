@@ -1,7 +1,8 @@
 class Diamond
   def build(letter)
     letters = ('A'..letter).to_a
-    size = letters.length.to_i
+    
+    size = letters.length
 
     diamond = []
     diamond << ('_' * (size - 1) + 'A' + '_' * (size - 1) + "\n")
